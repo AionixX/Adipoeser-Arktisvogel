@@ -1,7 +1,7 @@
 <template>
-    <v-toolbar dense class="background" color="#3C9FE8">
+    <v-toolbar dense class="background" color="#3C9FE8" style="width: 100vw">
         <v-toolbar-title>
-            <v-img v-ripple src="../assets/pinguin-logo.svg" aspect-ratio="1" contain width="2em" @click.stop="navigateTo('Start')"></v-img>
+            <v-img v-ripple src="../assets/pinguin-logo.svg" aspect-ratio="1" contain width="2em" @click.stop="back"></v-img>
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-title>
@@ -18,8 +18,8 @@
     export default {
         name: "NavigationBar",
         methods: {
-            navigateTo(destiny){
-                this.$emit('navigate-to', destiny)
+            back(){
+                this.$router.go(-1)
             }
         }
     }

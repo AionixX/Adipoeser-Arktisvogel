@@ -1,4 +1,4 @@
-# adipoeser-arktisvogel
+# Adipoeser Arktisvogel
 
 ## Project setup
 ```
