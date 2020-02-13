@@ -1,7 +1,7 @@
 <template>
     <v-container class="overlay fill-height justify-center" ripple>
-        <v-card style="z-index: 10">
-            <v-card-title style="background: #6394f7">Neue Frage hinzufügen</v-card-title>
+        <v-card style="z-index: 10; border-radius: 1em">
+            <v-card-title style="background: #6394f7; color: white">Neue Frage hinzufügen</v-card-title>
             <v-card-text class="pb-0 mt-4">
                 <v-row>
                     <v-text-field v-model="question" dense outlined label="Frage"></v-text-field>

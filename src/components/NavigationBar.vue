@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar dense class="background" color="#3C9FE8" style="width: 100vw">
+    <v-toolbar dense class="background" color="#3C9FE8" style="width: 100vw; color: white">
         <v-toolbar-title>
             <v-img v-ripple src="../assets/pinguin-logo.svg" aspect-ratio="1" contain width="2em" @click.stop="back"></v-img>
         </v-toolbar-title>

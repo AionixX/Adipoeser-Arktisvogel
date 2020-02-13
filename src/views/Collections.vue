@@ -29,7 +29,7 @@
                             </v-col>
                             <v-divider></v-divider>
                         </v-row>
-                        <span v-if="ownCollection == null" style="color: gray; font-size: 0.8em">Leider hast du noch keine eigenen Sammlungen...</span>
+                        <span v-if="ownCollection == null || ownCollection.length === 0" style="color: gray; font-size: 0.8em">Leider hast du noch keine eigenen Sammlungen...</span>
                         <v-divider></v-divider>
                         <v-btn text style="width: 90%" class="mt-2" @click.stop="showAddCollection = true">
                             <v-icon class="mr-2">mdi-plus-circle</v-icon>

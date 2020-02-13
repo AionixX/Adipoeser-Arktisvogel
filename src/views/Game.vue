@@ -10,13 +10,13 @@
             </div>
             <div style="width: 80%" class="blue-background">
                 <div class="animated-background">
-                    <v-card class="text-center overlay" min-height="70vh">
+                    <v-card class="text-center overlay" min-height="60vh" elevation="8">
                         <v-row justify="center" v-if="questions.length > 0">
-                            <v-card-title>{{questions[actualQuestion].Katalog}}</v-card-title>
+                            <v-card-title><strong>{{questions[actualQuestion].Katalog}}</strong></v-card-title>
                         </v-row>
                         <v-divider v-if="questions.length > 0"></v-divider>
-                        <v-row style="height: 40vh" align="center" v-if="questions.length > 0">
-                            <v-card-text><strong>{{questions[actualQuestion].Frage}}</strong></v-card-text>
+                        <v-row class="pa-6" style="height: 40vh" align="center" v-if="questions.length > 0">
+                            <v-card-text style="font-size: 1em"><strong>{{questions[actualQuestion].Frage}}</strong></v-card-text>
                         </v-row>
                         <v-row justify="center" v-if="questions.length == 0">
                             <v-card-title>Nope</v-card-title>

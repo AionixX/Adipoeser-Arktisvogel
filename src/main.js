@@ -5,10 +5,12 @@ import VueRouter from 'vue-router'
 import router from './router/router'
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import VueClipboard from "vue-clipboard2";
 
 export const db = firebase.firestore();
 
 Vue.use(VueRouter);
+Vue.use(VueClipboard);
 
 new Vue({
   router,
